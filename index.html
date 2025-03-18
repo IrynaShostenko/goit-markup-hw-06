@@ -29,33 +29,33 @@
   </head>
   <body>
     <!-- #region header -->
-    <header class="top-line">
-      <div class="container top-line-nav">
+    <header class="header">
+      <div class="container header-nav">
         <nav class="navigation">
           <a class="logo" href="./index.html"
             >Web<span class="logo-studio">Studio</span></a
           >
-          <ul class="top-line-list">
+          <ul class="header-list">
             <li>
-              <a class="top-line-item current" href="./index.html">Studio</a>
+              <a class="header-item current" href="./index.html">Studio</a>
             </li>
             <li>
-              <a class="top-line-item" href="">Portfolio</a>
+              <a class="header-item" href="">Portfolio</a>
             </li>
             <li>
-              <a class="top-line-item" href="">Contacts</a>
+              <a class="header-item" href="">Contacts</a>
             </li>
           </ul>
         </nav>
-        <address class="top-line-contacts">
-          <ul class="top-line-contacts-list">
+        <address class="header-contacts">
+          <ul class="header-contacts-list">
             <li>
-              <a class="top-line-contacts-item" href="mailto:info@devstudio.com"
+              <a class="header-contacts-item" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="top-line-contacts-item" href="tel:+110001111111"
+              <a class="header-contacts-item" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -512,12 +512,8 @@
     <!-- #region modal -->
     <div class="modal-overlay">
       <div class="modal">
-        <button
-          class="modal-close-btn"
-          type="button"
-          aria-label="Modal close button"
-        >
-          <svg height="8" width="8" class="modal-close-icon">
+        <button class="close-btn" type="button" aria-label="Modal close button">
+          <svg height="8" width="8" class="close-icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -599,6 +595,68 @@
           <button class="modal-send-btn button" type="submit">Send</button>
         </form>
       </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region mobile menu -->
+    <div class="mobile-menu">
+      <button class="close-btn" type="button" onclick="closeMobileMenu()">
+        <svg height="8" width="8" class="close-icon">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-navigation">
+        <ul class="mobile-menu-list">
+          <li>
+            <a class="header-item current" href="./index.html">Studio</a>
+          </li>
+          <li><a class="header-item" href="">Portfolio</a></li>
+          <li><a class="header-item" href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="mobile-contacts">
+        <ul class="header-contacts-list">
+          <li>
+            <a class="header-contacts-item current" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a class="header-contacts-item" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link" href="">
+            <svg height="24" width="24" class="social-icon">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="">
+            <svg height="24" width="24" class="social-icon">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="">
+            <svg height="24" width="24" class="social-icon">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="">
+            <svg height="24" width="24" class="social-icon">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
     <!-- #endregion -->
   </body>
