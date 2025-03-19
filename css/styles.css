@@ -199,6 +199,14 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
 /* #endregion */
 
 /* #region Utility Classes */
@@ -309,14 +317,14 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 24px 0;
+  /* padding: 24px 0; */
 
   @media only screen and (min-width: 768px) {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     display: block;
-    padding: 24px 0;
+    /* padding: 24px 0; */
     position: relative;
   }
 }
@@ -412,7 +420,6 @@ img {
 /* #region Hero Section */
 
 .hero {
-
   background-color: var(--navy-blue);
   color: var(--white);
   background-image: linear-gradient(var(--grey), var(--grey)),
@@ -426,7 +433,6 @@ img {
   text-align: center;
 
   @media only screen and (min-width: 768px) {
-
     padding: 112px 0;
   }
 
@@ -439,7 +445,7 @@ img {
 }
 
 @media (min-resolution: 192dpi) {
-  .main-section {
+  .hero {
     background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
@@ -449,7 +455,7 @@ img {
 
 
 @media (min-width: 1158px) and (min-resolution: 192dpi) {
-  .main-section {
+  .hero {
     background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
